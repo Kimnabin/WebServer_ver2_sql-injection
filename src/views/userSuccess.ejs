@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User check success</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-container">
+    <div class="w3-card-4 w3-margin w3-padding">
+        <h2>User Check Success</h2>
+        <form action="/v1/api/userSuccess" method="POST">
+            <div class="w3-margin-bottom">
+                <label for="userId">User ID:</label>
+                <select class="w3-select w3-border" name="id" id="userId">
+                    <option value="<%= userId %>"><%= userId %></option>
+                </select>
+            </div>
+            <button type="submit" class="w3-button w3-brown w3-round-large">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

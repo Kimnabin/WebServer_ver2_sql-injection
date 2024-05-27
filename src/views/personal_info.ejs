@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Personal Information</title>
+</head>
+<body class="w3-container">
+    <h1>Personal Information for <%= user.username %></h1>
+    <table class="w3-table w3-bordered w3-striped w3-card-4">
+        <tr>
+            <th>Field</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Full Name</td>
+            <td><%= user.full_name %></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><%= user.age %></td>
+        </tr>
+        <tr>
+            <td>ID Number</td>
+            <td><%= user.id_number %></td>
+        </tr>
+        <tr>
+            <td>Bank Account Number</td>
+            <td><%= user.bank_account_number %></td>
+        </tr>
+        <tr>
+            <td>Account Balance</td>
+            <td><%= user.account_balance %></td>
+        </tr>
+    </table>
+    <br>
+    <a class="w3-button w3-brown w3-round-large" style="text-decoration: none;" href="/v1/api/userSuccess/<%= user._id %>">사용자 정보 확인</a>
+    <h3>List items are published => </h3>
+    <a class="w3-button w3-brown w3-round-large" style="text-decoration: none;" href="/v1/api/products">Here</a>
+</body>
+</html>
+
